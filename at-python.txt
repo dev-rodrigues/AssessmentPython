@@ -1,0 +1,8 @@
+{'name': 'C:/hiberfil.sys', 'size': 13723168768}
+{'name': 'C:/pagefile.sys', 'size': 5100273664}
+{'name': 'C:/swapfile.sys', 'size': 16777216}
+{'name': 'C:/bootmgr', 'size': 413738}
+{'name': 'C:/DumpStack.log.tmp', 'size': 8192}
+{'name': 'C:/DumpStack.log', 'size': 8192}
+{'name': 'C:/BOOTNXT', 'size': 1}
+{'name': 'C:/Novo Documento de Texto.txt', 'size': 0}
