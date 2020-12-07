@@ -43,7 +43,6 @@ class ThreadMemoria(threading.Thread):
         self.threadID = threadID
         self.name = name
         self.counter = counter
-    
     def run(self):
         while True:
             print ("starting: " + self.name)
@@ -61,9 +60,7 @@ while True:
 
     if request.decode('utf-8') == 'close':
         break
-
     response = None
-
     if len(cache['memory']) > 0:
         response = get_last_info_of_memory()
 
