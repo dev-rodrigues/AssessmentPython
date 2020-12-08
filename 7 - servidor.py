@@ -5,10 +5,9 @@ import time
 socket_server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 host_name = socket.gethostname()
-server_port = 8080
 
-socket_server.bind((host_name, server_port))
-print('Aguardando conexão na porta: ', host_name,':',server_port)
+socket_server.bind((host_name, 8080))
+print('Aguardando conexão na porta: ', host_name,':', 8080)
 
 cache = {
     'memory': []
@@ -55,12 +54,13 @@ thread = ThreadMemoria(1, 'ThreadMemoria', 1)
 thread.start()
 
 while True:
+    response = None
 
     (request, client) = socket_server.recvfrom(1024)
 
     if request.decode('utf-8') == 'close':
         break
-    response = None
+
     if len(cache['memory']) > 0:
         response = get_last_info_of_memory()
 
