@@ -1,6 +1,9 @@
-import time, threading, multiprocessing
+import time, threading, multiprocessing, random
 
-veta = [5000, 5000, 5000, 4, 500, 600, 7, 8, 100000, 99999]
+veta = []
+
+for n in range(0, 1000000):
+    veta.append(random.randint(0, 10))
 
 inicio_sequencial = time.time()
 

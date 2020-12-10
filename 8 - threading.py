@@ -1,4 +1,4 @@
-import threading, time
+import threading, time, random
 
 def fatorial(n):
   fat = n
@@ -10,7 +10,11 @@ def to_list(function, veta, vetb):
   for e in veta:
     vetb.append(function(e))
 
-veta = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+veta = []
+for n in range(0, 1000000):
+  veta.append(random.randint(0, 10))
+
 vetb = []
 n = 500
 
